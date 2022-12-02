@@ -59,17 +59,37 @@ public class Calculator {
         }
     }
 
+    /*
+        Change from: Anumahal
+        Function that receives two int arguments
+        arguments: Two double arguments
+        return: One double value
+    */
+    public void multiplication(double number1, double number2)
+    {
+        try {
+            result = number1 * number2;
+        } catch (Exception e) {
+            System.out.println("Invalid Input");
+        }
+    }
+
     public void calc(String operator){
         switch(operator)
         {
 
+             case("+"): //Rohini Bansal
+                add(number1, number2);
+                break;
+
             case("-"): // Prachi Adhwaryu [500202018]
                 subtraction(number1, number2);
                 break;
-
-            case("+"): //Rohini Bansal
-                add(number1, number2);
-                break;
+            
+            case("*"): // Anumahal
+                multiplication(number1, number2);
+            break;
+            
             case("/"): // Julian Gil
                 division(number1, number2);
                 break;
