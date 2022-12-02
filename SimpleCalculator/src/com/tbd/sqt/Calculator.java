@@ -28,7 +28,8 @@ public class Calculator {
                 result = number2 - number1;
         } catch (Exception e) {
 
-    Author: Rohini Bansal
+   
+    /*Author: Rohini Bansal
     ID: 500209290
     Function : Addition Operation between 2 numbers
     Arguments : user input numbers 2 double values
