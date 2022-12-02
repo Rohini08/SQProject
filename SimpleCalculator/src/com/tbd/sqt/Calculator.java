@@ -13,6 +13,24 @@ public class Calculator {
     }
 
     /*
+        Change from: Prachi Adhwaryu [500202018]
+        Function: Subtraction of two arguments
+        Arguments: Two double arguments
+        Output: One double value
+    */
+    public void subtraction(double number1, double number2)
+    {
+        try {
+            if(number1 > number2)
+                result = number1 - number2;
+            else
+                result = number2 - number1;
+        } catch (Exception e) {
+            System.out.println("Invalid Input");
+        }
+    }
+
+    /*
         Change from: Julian Gil
         Function that receives two int arguments
         arguments: Two double arguments
@@ -30,6 +48,9 @@ public class Calculator {
     public void calc(String operator){
         switch(operator)
         {
+            case("-"): // Prachi Adhwaryu [500202018]
+                subtraction(number1, number2);
+                break;
             case("/"): // Julian Gil
                 division(number1, number2);
                 break;
