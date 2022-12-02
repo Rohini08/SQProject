@@ -13,6 +13,22 @@ public class Calculator {
     }
 
     /*
+    Author: Rohini Bansal
+    ID: 500209290
+    Function : Addition Operation between 2 numbers
+    Arguments : user input numbers 2 double values
+    Result : one double value
+     */
+    public void add(double number1, double number2){
+        try{
+            result= number1 + number2;
+
+        }catch(Exception e){
+            System.out.println("Invalid Input");
+        }
+    }
+
+    /*
         Change from: Julian Gil
         Function that receives two int arguments
         arguments: Two double arguments
@@ -30,9 +46,13 @@ public class Calculator {
     public void calc(String operator){
         switch(operator)
         {
+            case("+"): //Rohini Bansal
+                add(number1, number2);
+                break;
             case("/"): // Julian Gil
                 division(number1, number2);
                 break;
+
         }
     }
 
