@@ -13,6 +13,7 @@ public class Calculator {
     }
 
     /*
+
         Change from: Prachi Adhwaryu [500202018]
         Function: Subtraction of two arguments
         Arguments: Two double arguments
@@ -26,6 +27,19 @@ public class Calculator {
             else
                 result = number2 - number1;
         } catch (Exception e) {
+
+    Author: Rohini Bansal
+    ID: 500209290
+    Function : Addition Operation between 2 numbers
+    Arguments : user input numbers 2 double values
+    Result : one double value
+     */
+    public void add(double number1, double number2){
+        try{
+            result= number1 + number2;
+
+        }catch(Exception e){
+
             System.out.println("Invalid Input");
         }
     }
@@ -48,12 +62,18 @@ public class Calculator {
     public void calc(String operator){
         switch(operator)
         {
+
             case("-"): // Prachi Adhwaryu [500202018]
                 subtraction(number1, number2);
+                break;
+
+            case("+"): //Rohini Bansal
+                add(number1, number2);
                 break;
             case("/"): // Julian Gil
                 division(number1, number2);
                 break;
+
         }
     }
 
