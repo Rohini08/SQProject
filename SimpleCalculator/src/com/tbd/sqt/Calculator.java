@@ -21,7 +21,7 @@ public class Calculator {
      */
     public void add(double number1, double number2){
         try{
-            result=number1+number2;
+            result= number1 + number2;
 
         }catch(Exception e){
             System.out.println("Invalid Input");
