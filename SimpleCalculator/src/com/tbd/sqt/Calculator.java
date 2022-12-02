@@ -41,6 +41,6 @@ public class Calculator {
         Function that returns result attribute
     */
     public void getResult() {
-        System.out.printf("Result is: %s \n", result);;
+        System.out.printf("Result is: %s \n", result);
     }
 }
