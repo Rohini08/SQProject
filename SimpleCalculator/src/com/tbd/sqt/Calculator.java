@@ -19,15 +19,17 @@ public class Calculator {
         Arguments: Two double arguments
         Output: One double value
     */
-    public void subtraction(double number1, double number2)
-    {
+    public void subtraction(double number1, double number2) {
         try {
-            if(number1 > number2)
+            if (number1 > number2)
                 result = number1 - number2;
             else
                 result = number2 - number1;
         } catch (Exception e) {
 
+            System.out.println("Invalid Input");
+        }
+    }
    
     /*Author: Rohini Bansal
     ID: 500209290
@@ -78,7 +80,6 @@ public class Calculator {
     public void calc(String operator){
         switch(operator)
         {
-
              case("+"): //Rohini Bansal
                 add(number1, number2);
                 break;
